@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Part 1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+        var rpschoices = ["r", "p", "s"];
+
+        // Creating variables to hold the number of wins, losses, and ties. They start at 0.
+        var wins = 0;
+        var losses = 0;
+        var ties = 0;
+
+        //Randomly generate a r, p, s choice//
+
+        for (i = 0; i < 10; i++) {
+            //Randomly chooses a choice from the opitons array.
+            var computerguess = rpschoices[Math.floor(Math.random() * rpschoices.length)];
+
+         //collect users response 
+            var userguess = prompt("Enter r, p, or s to play!");
+            userguess = userguess.toLowerCase();
+
+            if (userguess === "r" || userguess === "p" || userguess === "s") {
+
+                alert("The computer guessed " + computerguess);
+
+            //Win / Lose conditions : 
+            if ((userguess === "r" && computerguess === "s") ||
+                (userguess === "p" && computerguess === "r") ||
+                (userguess === "s" && computerguess === "p")) {
+                wins++;
+                alert("You've won " + wins + " times!");
+            }
+            else if (computerguess === userguess) {
+                ties++;
+                alert("You've tied " + ties + " times!");
+            }
+            else {
+                losses++;
+                alert("You've lost " + losses + " times!");
+            }
+            }
+        }
+        
+
+        alert("Total wins: " + wins + "\nTotal ties: " + ties + "\n Total losses: " + losses)
+
+
+
+    </script>
+</body>
+
+</html>
