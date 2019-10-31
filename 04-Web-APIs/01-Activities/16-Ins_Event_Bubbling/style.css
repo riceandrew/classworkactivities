@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -30,4 +31,38 @@ body {
   color: white;
   padding: 20px;
   margin: 100px;
+=======
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, .outer-div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+}
+
+.outer-div {
+  background-color: #78A1BB;
+  cursor: pointer;
+  padding: 100px;
+}
+
+.inner-div {
+  height: 60%;
+  background-color: rgb(61, 70, 63);
+  padding: 100px;
+  margin: 20px;
+}
+
+.button {
+  background-color: #283044;
+  color: white;
+  padding: 20px;
+  margin: 100px;
+>>>>>>> 2eea7de7cd53209ef5faf8234bd2aa46e0469e46
 }

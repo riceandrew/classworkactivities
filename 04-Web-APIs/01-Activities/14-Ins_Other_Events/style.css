@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   margin: 50px 100px;
 }
@@ -11,4 +12,19 @@ button {
   width: 150px;
   border-radius: 5px;
   cursor: pointer;
+=======
+.container {
+  margin: 50px 100px;
+}
+
+input, select, button {
+  height: 40px;
+  margin-right: 30px;
+}
+
+button {
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+>>>>>>> 2eea7de7cd53209ef5faf8234bd2aa46e0469e46
 }
