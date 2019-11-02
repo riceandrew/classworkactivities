@@ -87,6 +87,18 @@
         </div>
       </div>
 
+      <div id="drewStuff" class="card">
+          <h4 class="card-header">Superpowers - Stuff</h4>
+          <div class="card-body">
+            <div class="text-center">
+              <button class="btn btn-dark btn-lg stuff-button">
+                <span class="fa fa-eye"></span> Do Stuff</button>
+              <button class="btn btn-info btn-lg unstuff-button">
+                <span class="fa fa-eye-slash"></span> Undo Stuff</button>
+            </div>
+          </div>
+        </div>
+
       <!-- Right Card (Captain Planet Hero)-->
       <div class="col-lg-6">
 
@@ -106,6 +118,11 @@
     // Gets Link for Theme Song
     var audioElement = document.createElement("audio");
     audioElement.setAttribute("src", "assets/captainplanet24.mp3");
+
+    //Stuff Button
+    $(".stuff-button").on("click", function() {
+      captainPlanet.clone();
+    });
 
     // Theme Button
     $(".theme-button").on("click", function() {
